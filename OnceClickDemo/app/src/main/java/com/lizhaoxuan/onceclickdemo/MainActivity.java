@@ -1,5 +1,6 @@
 package com.lizhaoxuan.onceclickdemo;
 
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //类似于ButterKnife的Bind方法。初始化OnceClick
         OnceInit.once(this);
-        text = (TextView)findViewById(R.id.textView);
+        text = (TextView) findViewById(R.id.textView);
     }
 
     @OnceClick(R.id.btn)
-    public void once(){
-        text.setText("click"+num++);
-        Log.d("tag","once");
+    public void once() {
+        //点击事件
+        Log.d("tag", "onceMe:" + System.currentTimeMillis());
     }
 
     @OnceClick(R.id.btn2)
-    public void onceMe(View v){
-        ((Button)v).setText("click"+num++);
-        Log.d("tag","onceMe");
+    public void onceMe(View v) {
+        ((Button) v).setText("click" + num++);
+        Log.d("tag", "onceMe");
     }
 }

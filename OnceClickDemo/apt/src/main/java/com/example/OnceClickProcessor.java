@@ -66,6 +66,7 @@ public class OnceClickProcessor extends AbstractProcessor {
             ExecutableElement executableElement = (ExecutableElement) element;
             TypeElement classElement = (TypeElement) element
                     .getEnclosingElement();
+
             PackageElement packageElement = elementUtils.getPackageOf(classElement);
 
 
