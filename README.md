@@ -1,4 +1,4 @@
-##OnceClick
+## OnceClick
 
 作为一个Android低端机用户，我经常会遇到这样一个问题：
 
@@ -8,9 +8,9 @@
 
 
 
-###Usage
+### Usage
 
-####Step 1
+#### Step 1
 
 Install with gradle
 
@@ -19,7 +19,7 @@ Install with gradle
     }
 
 
-####Step 2
+#### Step 2
 
 
 View、Fragment、Activity 中初始化
@@ -33,7 +33,7 @@ or
    	OnceInit.once(this,3000);
    	
 
-####Step 3
+#### Step 3
 
 修饰某个点击事件方法
 
@@ -44,7 +44,7 @@ or
     }
     
  
-###License
+### License
 
 OnceClick is opensource, contribution and feedback are welcomed
 
